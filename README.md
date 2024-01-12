@@ -1,5 +1,11 @@
 # process
 
+fork [node-process](https://github.com/defunctzombie/node-process)
+
+will merge process.env, to compatible vite define in dev;
+
+## user
+
 ```require('process');``` just like any other module.
 
 Works in node.js and browsers via the browser.js shim provided with the module.

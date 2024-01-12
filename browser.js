@@ -1,5 +1,5 @@
 // shim for using process in browser
-var process = module.exports = {};
+var process = (module.exports = typeof process === "undefined" ? {} : process);
 
 // cached from whatever global is present so that test runners that stub it
 // don't break things.  But we need to wrap it in a try catch in case it is
@@ -154,7 +154,7 @@ Item.prototype.run = function () {
 };
 process.title = 'browser';
 process.browser = true;
-process.env = {};
+process.env = Object.assign({}, process.env);
 process.argv = [];
 process.version = ''; // empty string to avoid regexp issues
 process.versions = {};
