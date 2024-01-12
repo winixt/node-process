@@ -1,6 +1,6 @@
 {
   "author": "Roman Shtylman <shtylman@gmail.com>",
-  "name": "process",
+  "name": "@qlin/process",
   "description": "process information for node.js and browsers",
   "keywords": [
     "process"
